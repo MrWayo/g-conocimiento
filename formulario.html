@@ -28,8 +28,14 @@
 				<li><a href="preferencias.html">PREFERENCIAS</a></li>
 			</ul>
 		</div>
-		<div class="col s9">
+		<form action="">
+			<div class="col s9">
 			<div class="form">
+				<div class="row center">
+					<div class="col 12">
+						<h5>Formulario de Datos personales</h5>
+					</div>
+				</div>
 				<div class="row">
 					<div class="col m6">
 						<input placeholder="Escribe tu nombre" type="text" name="">
@@ -48,7 +54,7 @@
 				</div>
 				<div class="row">
 					<div class="col 12 center">
-						<input placeholder="Ingresa tu Teléfono" type="phone" name="">
+						<input placeholder="Ingresa tu Teléfono" type="tel" name="">
 						<label>Teléfono</label>
 					</div>
 				</div>
@@ -60,12 +66,18 @@
 				</div>
 				<div class="row">
 					<div class="col 12 center">
-						<textarea></textarea>
-						<label>Comentarios</label>
+						<textarea id="icon_prefix2" class="materialize-textarea" placeholder="Escribe un mensaje..."></textarea>
+          				<label for="icon_prefix2">Comentarios</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col 12">
+						<a id="create_pdf" class="btn">Generar pdf</a>
 					</div>
 				</div>
 			</div>
 		</div>
+		</form>
 	</div>
 	</article>
 	<footer class="page-footer orange">
@@ -75,5 +87,8 @@
 	</footer>
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/materialize.js"></script>
+	<script type="text/javascript" src="js/jspdf.min.js"></script>
+	<script type="text/javascript" src="js/html2canvas.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

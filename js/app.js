@@ -18,7 +18,7 @@ function createPDF(){
           format:'a4'
         });     
         doc.addImage(img, 'JPEG', 20, 20);
-        doc.save('techumber-html-to-pdf.pdf');
+        doc.save('formulario-cv.pdf');
         form.width(cache_width);
 	});
 }
